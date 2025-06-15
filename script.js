@@ -1,0 +1,1 @@
+alert("Welcome to Abdullah's F1 website")
