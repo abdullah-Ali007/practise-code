@@ -1,17 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>abdullah</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <h1>this is abdullah ali</h1>
-    <h2>my bookmarks</h2>
-    <a href="https://www.youtube.com/">youtube</a>
-    <a href="https://www.tapmad.com/">tapmad</a>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 Cars - Speed & Style</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
 
-    <p>these are some changes to show on the website </p>
+    header {
+      background: linear-gradient(to right, #ff0000, #990000);
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    nav {
+      background: #222;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff0000;
+      transform: scale(1.1);
+    }
+
+    .hero {
+      background: url('https://i.imgur.com/yourF1image.jpg') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4em;
+      color: #fff;
+      text-shadow: 0 0 10px #000;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .card {
+      background: #222;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255,0,0,0.4);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.8em;
+      color: #aaa;
+    }
+
+    /* Responsive */
+    @media(max-width: 600px) {
+      .hero {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>F1 CARS - Abdullah Ali</header>
+
+  <nav>
+    <a href="#cars">Cars</a>
+    <a href="#teams">Teams</a>
+    <a href="#history">History</a>
+  </nav>
+
+  <div class="hero">Feel The Speed</div>
+
+  <div class="section" id="cars">
+    <h2>Latest F1 Cars</h2>
+    <div class="card">Ferrari SF-24</div>
+    <div class="card">Red Bull RB20</div>
+    <div class="card">Mercedes W15</div>
+  </div>
+
+  <div class="section" id="teams">
+    <h2>Top Teams</h2>
+    <div class="card">Red Bull Racing</div>
+    <div class="card">Ferrari</div>
+    <div class="card">Mercedes AMG</div>
+  </div>
+
+  <div class="section" id="history">
+    <h2>F1 History</h2>
+    <p>Formula 1 has a rich history dating back to 1950...</p>
+  </div>
+
+  <footer>&copy; 2025 F1 Cars. All rights reserved.</footer>
+
 </body>
 </html>
